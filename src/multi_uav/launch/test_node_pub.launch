@@ -1,0 +1,5 @@
+<launch>
+  <group ns="group1">
+    <node pkg="multi_uav" type="test_node_pub" name="test_node_pub"  output="screen" />
+  </group>
+</launch>

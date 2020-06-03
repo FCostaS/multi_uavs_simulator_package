@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="multi_uav" type="APF_5uav" name="APFcontrol_5uav_node" output="screen" />
+</launch>

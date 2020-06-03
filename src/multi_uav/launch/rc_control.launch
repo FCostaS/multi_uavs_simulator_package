@@ -1,0 +1,5 @@
+<launch>
+  <group ns="group1">
+    <node pkg="multi_uav" type="override" name="rc_override" output="screen" />
+  </group>
+</launch>

@@ -1,0 +1,5 @@
+<?xml version='1.0'?>
+<launch>
+  <node pkg="multi_uav" type="artificial_potential_field" name="artificial_potential_field_node" output="screen" />
+
+</launch>

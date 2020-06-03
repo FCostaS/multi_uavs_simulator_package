@@ -1,0 +1,5 @@
+<?xml version='1.0'?>
+<launch>
+    <node pkg="multi_uav" type="leader_follower" name="leader_follower_node" output="screen" />
+
+</launch>

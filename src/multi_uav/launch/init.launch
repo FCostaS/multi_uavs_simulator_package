@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<launch>
+
+<group ns="group1">
+	<node pkg="ros_erle_takeoff_land" type="ros_erle_takeoff_land" name="takeoff1" output="screen"/>
+</group>
+
+<group ns="group2">
+	<node pkg="ros_erle_takeoff_land" type="ros_erle_takeoff_land" name="takeoff2" output="screen"/>
+</group>
+
+<group ns="group3">
+	<node pkg="ros_erle_takeoff_land" type="ros_erle_takeoff_land" name="takeoff3" output="screen"/>
+</group>
+
+<group ns="group4">
+	<node pkg="ros_erle_takeoff_land" type="ros_erle_takeoff_land" name="takeoff4" output="screen"/>
+</group>
+
+<group ns="group5">
+	<node pkg="ros_erle_takeoff_land" type="ros_erle_takeoff_land" name="takeoff5" output="screen"/>
+</group> 
+
+</launch>

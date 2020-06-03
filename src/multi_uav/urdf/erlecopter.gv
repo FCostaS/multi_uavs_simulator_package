@@ -1,0 +1,32 @@
+digraph G {
+node [shape=box];
+"base_link" [label="base_link"];
+"base_link_inertia" [label="base_link_inertia"];
+"rotor_0" [label="rotor_0"];
+"rotor_1" [label="rotor_1"];
+"rotor_2" [label="rotor_2"];
+"rotor_3" [label="rotor_3"];
+"sonar2_link" [label="sonar2_link"];
+"sonar_link" [label="sonar_link"];
+"uav1/erlecopter/imu_link" [label="uav1/erlecopter/imu_link"];
+"uav1/erlecopter/imugt_link" [label="uav1/erlecopter/imugt_link"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_link" -> "base_joint" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"base_joint" -> "base_link_inertia"
+"base_link" -> "rotor_0_joint" [label="xyz: 0.141 -0.141 0.03 \nrpy: 0 -0 0"]
+"rotor_0_joint" -> "rotor_0"
+"base_link" -> "rotor_1_joint" [label="xyz: -0.141 0.141 0.03 \nrpy: 0 -0 0"]
+"rotor_1_joint" -> "rotor_1"
+"base_link" -> "rotor_2_joint" [label="xyz: 0.141 0.141 0.03 \nrpy: 0 -0 0"]
+"rotor_2_joint" -> "rotor_2"
+"base_link" -> "rotor_3_joint" [label="xyz: -0.141 -0.141 0.03 \nrpy: 0 -0 0"]
+"rotor_3_joint" -> "rotor_3"
+"base_link" -> "sonar2_joint" [label="xyz: 0.13 0 0.02 \nrpy: 0 -0 0"]
+"sonar2_joint" -> "sonar2_link"
+"base_link" -> "sonar_joint" [label="xyz: 0.12 0 0 \nrpy: 0 1.5708 -0"]
+"sonar_joint" -> "sonar_link"
+"base_link" -> "uav1/erlecopter/imu_joint" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"uav1/erlecopter/imu_joint" -> "uav1/erlecopter/imu_link"
+"base_link" -> "uav1/erlecopter/imugt_joint" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"uav1/erlecopter/imugt_joint" -> "uav1/erlecopter/imugt_link"
+}
