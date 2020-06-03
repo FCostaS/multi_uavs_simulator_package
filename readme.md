@@ -1,1 +1,1 @@
-Please use the "new_branch" branch of this project :)
+This package contains the src files and its denpendencies :)
